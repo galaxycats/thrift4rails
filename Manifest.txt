@@ -1,0 +1,16 @@
+History.txt
+Manifest.txt
+PostInstall.txt
+README.rdoc
+Rakefile
+lib/thrift4rails.rb
+lib/thrift4rails/tasks.rb
+lib/thrift4rails/tasks/generate.rake
+lib/thrift4rails/tasks/service.rake
+lib/thrift4rails/thrift_client.rb
+script/console
+script/destroy
+script/generate
+test/test_helper.rb
+test/test_thrift4rails.rb
+thrift4rails.gemspec

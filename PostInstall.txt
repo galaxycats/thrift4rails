@@ -1,0 +1,3 @@
+Include 
+require 'thrift4rails/tasks/thrift'
+
