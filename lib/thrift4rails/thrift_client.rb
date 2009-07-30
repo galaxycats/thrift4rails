@@ -64,6 +64,10 @@ module Thrift4Rails
         begin
           transport.open
           response = client.send(meth, *args)
+        rescue Thrift::ProtocolException => e
+          client_exception = ClientException.new("Either no connection to Provider(#{@url}) or an internal thrift error occured. (Original Error: #{e.message})")
+          client_exception.set_backtrace(e.backtrace)
+          raise client_exception
         rescue Errno::ECONNREFUSED => e
           client_exception = ClientException.new("No connection to Provider: #{@url}. (Original Error: #{e.message})")
           client_exception.set_backtrace(e.backtrace)

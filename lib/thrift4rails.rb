@@ -5,5 +5,5 @@ require 'activesupport'
 require 'thrift4rails/thrift_client'
 
 module Thrift4Rails
-  VERSION = '0.0.3'
+  VERSION = '0.2.0'
 end
