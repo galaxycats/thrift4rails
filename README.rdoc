@@ -4,7 +4,8 @@
 
 == DESCRIPTION:
 
-FIX (describe your package)
+module Thrift4Rails::ReleaseActiveRecordConnection ist in der Version 0.3.0 dazugekommen
+Wenn das Modul inkludiert wird, wird nach jedem Methodenaufruf zusaetzlich ActiveRecord::Base.clear_active_connections! aufgerufen.
 
 == FEATURES/PROBLEMS:
 

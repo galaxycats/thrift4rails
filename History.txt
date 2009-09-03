@@ -4,5 +4,7 @@
   * Initial release
   * created ThriftClient
   * created first rake-tasks to generate thrift definitions
-* Version 0.2.0
+* 2 Version 0.2.0
   * ThriftClient catches the Thrift::ProtocolException now
+* Version 0.2.2
+  * ClientStubForTesting added, It catches all methods and returns true

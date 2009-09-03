@@ -11,9 +11,11 @@ $hoe = Hoe.new('thrift4rails', Thrift4Rails::VERSION) do |p|
   p.rubyforge_name       = p.name # TODO this is default value
   p.extra_deps         = [
     ['activesupport','>= 2.3.2'],
+    ['activerecord', '>= 2.3.2']
   ]
   p.extra_dev_deps = [
-    ['newgem', ">= #{::Newgem::VERSION}"]
+    ['newgem', ">= #{::Newgem::VERSION}"],
+    ['mocha']
   ]
   
   p.clean_globs |= %w[**/.DS_Store tmp *.log]

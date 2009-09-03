@@ -72,7 +72,7 @@ module Thrift4Rails
           client_exception = ClientException.new("No connection to Provider: #{@url}. (Original Error: #{e.message})")
           client_exception.set_backtrace(e.backtrace)
           raise client_exception
-        rescue Errno::ETIMEDOUT => e
+        rescue Errno::ETIMEDOUT, Timeout::Error => e
           client_exception = ClientException.new("Connection to Provider '#{@url}' timed out. (Original Error: #{e.message})")
           client_exception.set_backtrace(e.backtrace)
           raise client_exception
